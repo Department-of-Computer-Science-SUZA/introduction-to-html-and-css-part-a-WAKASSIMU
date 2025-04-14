@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<title> regisrtation form</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<h1 style="font-size: large;"> regisrtation form</h1>
+<body>
+<form>
+    <fieldset>
+        <legend>self information</legend>
+<label for ="firstname"> full name</label><br>
+<input type="text" id ="firstname" name ="firstname"<br>
+<label for = "email"> email adress</label><br>
+<input type="text" id ="email" name = "email"<br>
+<label for ="password"> Password</label><br>
+<input type="number" id ="password" name="password"<br>
+    </fieldset>
+</form>
+
+<h2 style="font-size: larger;"> gender section</h2>
+
+<form>
+    <fieldset>
+        <legend> select your gender</legend>
+    
+    <input type="radio" id="gender" name="pgender" value ="MALE">
+    <label for="gender">MALE</label><br>
+    <input type="radio" id="female" name="pgender" value="FEMALE">
+    <label for="gender">FEMALE</label><br>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend> interest selection</legend>
+   
+<input type="checkbox" id="interest" name="pinterest" value="CODING">
+<label for="interest">CODING</label><br>
+<input type="checkbox" id="interest" name="pinterest" value="PLAYING">
+<label for="interest">PLAYING</label><br>
+ </fieldset>
+</form>
+
+
+<fieldset>
+    <legend>citizenship</legend>
+
+<h3 style="font-size: medium;"> select your country</h3>
+<label for="menu"> choose your country</label>
+<select id="menu" name="menu">
+    <option value="option1"> TANZANIA</option>
+    <option value="option2">KENYA</option>
+    <option value="option3">RWANDA</option>
+</select>
+</fieldset>
+
+<form>
+    <input type="submit" value="submit"<br>
+</form>
+
+<p> The difference between get and post is that get is used to retrieve the data while post is used to send the data to the required filds</p>
+<p3> if the required fields is empty, when it must be filled the form won't be submitted while if the fild is option to fill, the form wuil be submitted succesfully</p3>
+
+
+<fieldset> 
+    <legend>profile uploading</legend>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="profilePicture"> please upload your profile picture</label><br><br>
+    <input type="=file" id="profilePicture" name="profilePicture" accept="image/*"><br><br>
+    <input type="submit" value="upload">
+
+</form>
+</fieldset>
+</body>
